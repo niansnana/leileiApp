@@ -1,0 +1,199 @@
+/* 
+    通用 css 代码
+*/
+
+@import "../public/reset.css";
+@import "https://at.alicdn.com/t/font_1439542_vb21sqswz1i.css";
+
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* 导航栏 */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(170, 168, 168);
+}
+.nav a {
+  margin-left: 10px;
+}
+.nav a i {
+  font-weight: bold;
+}
+.nav h1 {
+  font-size: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-weight: 550;
+}
+/* 内容栏 */
+.container {
+  height: 100%;
+  flex: 1;
+  overflow: auto;
+  margin-top: 5px;
+}
+
+/* banner */
+.container .banner {
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid rgb(217, 244, 237);
+}
+.container .banner img {
+  width: 100%;
+  height: 100%;
+}
+/* info */
+.container .info,
+.container .solve,
+.container .else {
+  padding: 20px;
+}
+.container .info .logo {
+  display: flex;
+  justify-content: space-between;
+}
+.container .info .logo > i {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 13px;
+  background-color: rgb(116, 225, 186);
+  color: #fff;
+  font-size: 1.6em;
+  margin-top: -35px;
+}
+.container .info .logo button {
+  width: 70px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgb(241, 241, 241);
+  border-radius: 5px;
+  color: #999;
+}
+.container .info .infos h1 {
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+.container .info .infos .title {
+  display: flex;
+  margin-top: 30px;
+}
+.container .info .infos :nth-child(3) {
+  margin-top: 15px;
+}
+.container .info .infos .title p {
+  margin-right: 20px;
+}
+.container .info .infos :nth-child(2) span {
+  background-color: rgb(210, 231, 226);
+  padding: 2px 4px;
+  box-sizing: border-box;
+}
+.container .info .infos :nth-child(3) span {
+  background-color: rgb(235, 235, 235);
+  padding: 2px 4px;
+  box-sizing: border-box;
+}
+/* solve */
+.container .solve .way {
+  margin-bottom: 20px;
+}
+.container .solve .way h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.container .solve .way p {
+  text-indent: 1em;
+  line-height: 20px;
+}
+.container .solve :nth-child(2) p {
+  text-indent: 0;
+}
+/* else */
+/* .else {
+  width: 100%;
+} */
+.else h1 {
+  width: 104px;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  overflow: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.else .more {
+  width: 100%;
+  min-width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.else .more::-webkit-scrollbar {
+  display: none;
+}
+.else .more .item {
+  width: 45%;
+  height: 100%;
+  /* box-shadow: 0 0 15px rgba(110, 173, 253, 0.5); */
+  padding: 5px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+.else .more .item a img {
+  width: 100%;
+  height: 90px;
+  border-radius: 5px;
+}
+.else .more .item .tip {
+  margin-top: 5px;
+}
+.else .more .item .tip .name {
+  display: flex;
+}
+.else .more .item .tip .name i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: rgb(110, 173, 253);
+  color: #fff;
+}
+.else .more .item .tip .name span {
+  font-weight: bold;
+  margin-left: 10px;
+}
+.else .more .item .tip .about p {
+  width: 70px;
+  height: 20px;
+  background-color: rgb(207, 230, 248);
+  padding: 2px 4px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 10px 0;
+}
+.else .more .item .tip .about span {
+  background-color: rgb(235, 235, 234);
+  padding: 3px 5px;
+  box-sizing: border-box;
+  text-align: center;
+}

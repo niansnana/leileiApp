@@ -1,0 +1,34 @@
+@import "../public/css.css";
+
+.container{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container .content a{
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #999;
+}
+
+/* 各个配色 */
+.container .content :nth-child(1){
+    border-top: none;
+}
+.container .content :nth-child(1) i{
+    color: rgb(239, 148, 143);
+}
+.container .content :nth-child(2) i{
+    color: rgb(240, 199, 139);
+    font-size: 20px;
+}
+.container .content :nth-child(3) i{
+    color: rgb(241, 147, 138);
+}
+.container .content :nth-child(4) i{
+    color: rgb(210, 227, 232);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .mescroll{
+			position: fixed;
+			top: 44px;
+			bottom: 0;
+			height: auto; /*如设置bottom:50px,则需height:auto才能生效*/
+		}
+    </style>
+
+    // unpkg的CDN:
+    <link rel="stylesheet" href="https://unpkg.com/mescroll.js@1.4.1/mescroll.min.css">
+    <script src="https://unpkg.com/mescroll.js@1.4.1/mescroll.min.js" charset="utf-8"></script>
+
+    // jsdelivr的CDN:
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mescroll.js@1.4.1/mescroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/mescroll.js@1.4.1/mescroll.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+    <div id="mescroll" class="mescroll"> //id可以改,而"mescroll"的class不能删
+        <div> //这个div不能删,否则上拉加载的布局会错位.(可以改成ul或者其他容器标签)
+            //内容...
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+@import "../../public/reset.css";
+@import "https://at.alicdn.com/t/font_1439542_98ixl2uc7jf.css";
+
+html{
+    height: 100%;
+    min-height: 100%;
+}
+body{
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* 导航栏 */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+}
+.nav a{
+    margin-left: 10px;
+}
+.nav a i{
+    font-weight: bold;
+}
+.nav h1{
+    font-size: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: 550;
+}
+/* 主区域内容栏 */
+.container .target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    margin-top: 10px;
+}
+.container h1{
+    font-size: 1.8em;
+    font-weight: 550;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.container h1::after{
+    content: "";
+    display: block;
+    width: 130px;height: 30px;
+    text-align: center;
+    border-top: 15px solid rgba(254, 204, 1, .8);
+    margin-top: -6px;
+}
+.container .target{
+    margin-top: -20px;
+    font-size: 12px;
+}
+.container .target :nth-child(1){
+    color: rgba(130, 130, 130, 1);
+}
+.container .target :nth-child(2){
+    color: rgba(130, 130, 130, .8);
+    margin-top: 15px;
+}
+.container .target :nth-child(3){
+    color: rgba(130, 130, 130, .6);
+}
+.container .target :nth-child(4){
+    color: rgba(130, 130, 130, .5);
+}
+.container .target :nth-child(5){
+    color: rgba(130, 130, 130, .2);
+    margin-top: 15px;
+}
+/* logo */
+.container .logo{
+    display: block;
+    width: 60px;height: 60px;
+    margin: 40px;
+}
+.container .logo img{
+    width: 60px;height: 60px;
+    /* width: 100%;height: 100%; */
+    border-radius: 10px;
+    border: 2px solid rgb(254, 204, 1);
+    box-shadow: 0 0 15px rgba(254, 204, 1, .5);
+    margin-bottom: 5px;
+}
+.container .logo span{
+    font-size: 12px;
+    white-space: nowrap;
+}
+/* 设计师参与者 */
+.container .design .more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container .design .more i{
+    font-size: 24px;
+    margin: 3px 0;
+}
+.container .design .more span{
+    font-weight: bold;
+}
+.container .design p{
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(186, 190, 191);
+}
+.container .design::after{
+    content: "";
+    display: block;
+    width: 20px;height: 10px;
+    border-top: 3px solid rgb(250, 218, 82);
+    margin: 30px auto;
+}
+
+/* 页脚 */
+.container .footer{
+    display: flex;
+    justify-content: center;;
+    align-items: center;;
+    font-size: 14px;
+    margin-bottom: 15px;
+}

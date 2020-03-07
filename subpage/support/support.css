@@ -1,0 +1,87 @@
+@import "../../public/reset.css";
+@import "https://at.alicdn.com/t/font_1439542_k6vbzo2tgfe.css";
+
+html{
+    height: 100%;
+    min-height: 100%;
+}
+body{
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* 导航栏 */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+}
+.nav a{
+    margin-left: 10px;
+}
+.nav a i{
+    font-weight: bold;
+}
+.nav h1{
+    font-size: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: 550;
+}
+/* 内容展示 */
+.container{
+    width: 100%;height: 100%;
+    background-color: rgb(245, 245, 247);
+    padding: 15px;
+    box-sizing: border-box;
+    flex: 1;
+    overflow: auto;
+}
+.container .item{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    height: 130px;
+    padding: 20px 20px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    margin-bottom: 15px;
+    position: relative;
+}
+.container .item .left h1{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.container .item .left h3{
+    color: rgb(152, 152, 152);
+    margin: 10px 0 20px;
+}
+.container .item .left a{
+    background-color: rgb(24, 211, 74);
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.container .item .right{
+    position: absolute;
+    right: 10%;top: 22%;
+    width: 50px;height: 50px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: rgb(229, 72, 55);
+}
+.container .item .right i{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    box-sizing: border-box;
+    color: #fff;
+}

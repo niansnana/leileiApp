@@ -1,0 +1,67 @@
+@import "../../public/reset.css";
+@import "https://at.alicdn.com/t/font_1439542_btco123z4ob.css";
+
+html{
+    height: 100%;
+    min-height: 100%;
+}
+body{
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* 导航栏 */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+}
+.nav a{
+    margin-left: 10px;
+}
+.nav a i{
+    font-weight: bold;
+}
+.nav h1{
+    font-size: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: 550;
+}
+
+/* 切换城市 */
+.container{
+    height: 100%;
+    flex: 1;
+    overflow: auto;
+}
+.container .switch{
+    position: fixed;
+    top: 25%;right: 5%;
+
+}
+.container .switch .switches{
+    display: flex;
+    flex-direction: column;
+}
+.container .switch .switches a{
+    text-align: center;
+    vertical-align: middle;
+    margin: 2px 0;
+}
+
+/* 详细城市选择 */
+.city span{
+    display: block;
+    width: 100%;height: 35px;
+    line-height: 35px;
+    text-indent: 1em;
+    background-color: rgb(241, 245, 246);
+}
+.city ul li{
+    height: 40px;
+    line-height: 40px;
+    text-indent: 1em;
+}
